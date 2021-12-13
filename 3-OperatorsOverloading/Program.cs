@@ -24,7 +24,7 @@ namespace OperatorsOverloading
             // Because it is implicit, we can also remove the cast here
             if (lst1 != (List<int>) res1)
             {
-                throw new Exception("Wrong implementation");
+                throw new Exception("Wrong implementation 1");
             }
 
             List<int> lst2 = lst;
@@ -32,7 +32,7 @@ namespace OperatorsOverloading
 
             if (lst2.Tail.Tail != lst1)
             {
-                throw new Exception("Wrong implementation");
+                throw new Exception("Wrong implementation 2");
             }
 
             List<int> lst3 = lst2;
@@ -43,17 +43,17 @@ namespace OperatorsOverloading
 
             if (lst3.Tail.Tail != res2)
             {
-                throw new Exception("Wrong implementation");
+                throw new Exception("Wrong implementation 3");
             }
 
             if (lst3 <= lst1)
             {
-                throw new Exception("Wrong implementation");
+                throw new Exception("Wrong implementation 4");
             }
 
             if (lst1 >= lst2)
             {
-                throw new Exception("Wrong implementation");
+                throw new Exception("Wrong implementation 5");
             }
 
             Console.WriteLine("Ok");
